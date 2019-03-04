@@ -81,6 +81,9 @@ main {
     .dFlex {
         flex-direction: column;
     }
+    #form{
+        width: 75% !important;
+    }
 }
 
 
@@ -143,6 +146,9 @@ button {
     animation: rainbow 18s ease infinite;
 }
 
+.rainbowE {
+    opacity: .8;
+}
 
 @keyframes rainbow {
     0% {
