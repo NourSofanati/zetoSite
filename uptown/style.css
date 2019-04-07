@@ -209,6 +209,9 @@ main>div>* {
     #About {
         padding: 20px;
     }
+    footer {
+        padding: 20px;
+    }
 }
 
 footer {
