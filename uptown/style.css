@@ -175,7 +175,9 @@ main>div>* {
     nav ul {
         display: none;
     }
-
+    nav{
+        padding: 10px;
+    }
     main {
         justify-content: center;
         align-items: center;
