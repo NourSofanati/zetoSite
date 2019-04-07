@@ -205,7 +205,7 @@ main>div>* {
     }
 
     #About {
-        flex-direction: column;
+        padding: 20px;
     }
 }
 
