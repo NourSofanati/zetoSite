@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Apartmentsofuptown.com</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css" integrity="sha384-QokYePQSOwpBDuhlHOsX0ymF6R/vLk/UQVz3WHa6wygxI5oGTmDTv8wahFOSspdm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/brands.css"
         integrity="sha384-n9+6/aSqa9lBidZMRCQHTHKJscPq6NW4pCQBiMmHdUCvPN8ZOg2zJJTkC7WIezWv" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/fontawesome.css"
@@ -22,7 +23,7 @@
             <li><a href="#About">About</a></li>
             <li><a href="#Contactus">Contact us</a></li>
         </ul>
-        <i class="fas fa-menu"></i>
+        <i class="fas fa-bars"></i>
     </nav>
     <main>
 
@@ -44,6 +45,12 @@
         <div>
             <h1>Heading</h1>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, magni.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit aut ducimus, commodi quos exercitationem rem consequuntur at recusandae aliquam assumenda, cumque voluptas beatae porro quam dolores itaque sunt vel deleniti, impedit amet. Quaerat, dolorem labore.</p>
+            <br>
+            <hr>
+            <br>
+            <h1>Heading 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores porro, sed libero laborum obcaecati neque illum accusantium ad unde, quos quisquam ut dolorem voluptas eaque tenetur deserunt hic pariatur eveniet autem quasi. In, ex quae cumque pariatur illum nam rerum?</p>
         </div>
     </section>
     <section id="Contactus">
@@ -65,9 +72,13 @@
     </footer>
     <script>
         const nav = document.querySelector('nav');
+        window.innerWidth <= 820 ? nav.classList.add('collapsed') : nav.classList.remove('collapsed');
         document.querySelector('body').onscroll = () => {
             scrollY <= 25 ? nav.classList.remove('scrolled') : nav.classList.add('scrolled');
         }
+        window.addEventListener('resize',()=>{
+            window.innerWidth <= 820 ? nav.classList.add('collapsed') : nav.classList.remove('collapsed');
+        })
     </script>
 </body>
 

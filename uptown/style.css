@@ -16,6 +16,14 @@ li {
     font-family: 'Montserrat', sans-serif;
 }
 
+nav .fas {
+    display: none;
+}
+
+.collapsed .fas {
+    display: block;
+}
+
 nav,
 .flexbox {
     display: flex;
@@ -134,12 +142,20 @@ main>div>* {
 
 #About {
     box-shadow: 0 0px 100px rgba(0, 0, 0, 0.609) inset;
-    height: 500px;
+    min-height: 300px;
     padding: 20px 75px;
     position: relative;
-    display: flex;
     background-color: rgb(255, 255, 255);
     background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%239C92AC' fill-opacity='0.41'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    display: flex;
+}
+
+#About div {
+    background: #fff;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    box-shadow: 0 0px 100px rgba(0, 0, 0, 0.609);
 }
 
 .scrolled {
@@ -187,7 +203,8 @@ main>div>* {
         padding: 10px;
         box-sizing: border-box;
     }
-    #About{
+
+    #About {
         flex-direction: column;
     }
 }
